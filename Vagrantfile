@@ -8,7 +8,5 @@ Vagrant.configure("2") do |config|
     yum -y install docker
     gpasswd -a vagrant dockerroot
     bash -c "echo -e '{\n  \"group\": \"dockerroot\"\n}' > /etc/docker/daemon.json"
-    docker pull docker/docker-bench-security
-    docker pull nginx
   SHELL
 end
